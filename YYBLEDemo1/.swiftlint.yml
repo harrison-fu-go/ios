@@ -1,0 +1,31 @@
+###############
+###############
+###############
+
+#移除某个文件夹下的SwiftLint规则
+excluded:
+  - Pods #移除Pods 下的
+
+#使某一个规则不可用
+disabled_rules:
+  - trailing_whitespace #多空格
+  - vertical_whitespace #多空行
+  - trailing_semicolon #分号
+  - comment_spacing #注释空格
+  - identifier_name #命名
+  - redundant_void_return #无返回值
+  - unused_closure_parameter #不用参数
+  - colon #冒号
+  - control_statement #if swift... 后面的空格
+  - unused_optional_binding #一些不使用的定义
+  - force_cast
+#  - line_length #一行的长度
+
+#配置单行长度
+line_length:
+    warning: 500
+    ignores_function_declarations: true
+    ignores_comments: true
+    ignores_interpolated_strings: true
+    ignores_urls: true
+

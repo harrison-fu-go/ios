@@ -1,0 +1,20 @@
+PODS:
+  - CSV.swift (2.4.3)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - CSV.swift (~> 2.4.3)
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - CSV.swift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  CSV.swift: d38741b349c067b4a6db42237cb0e2974d21ccac
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 36b210138fb18929e94bdcbf43479e10a1538352
+
+COCOAPODS: 1.12.0

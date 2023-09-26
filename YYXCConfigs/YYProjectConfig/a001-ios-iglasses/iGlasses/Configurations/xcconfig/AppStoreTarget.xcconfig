@@ -1,0 +1,5 @@
+#include "./Pods/Target Support Files/Pods-iGlasses/Pods-iGlasses.appstore.xcconfig"
+#include "BaseTarget.xcconfig"
+
+PRODUCT_BUNDLE_NAME = $(inherited)
+PRODUCT_BUNDLE_IDENTIFIER = com.holoever.ar.iGlasses

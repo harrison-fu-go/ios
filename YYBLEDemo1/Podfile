@@ -1,0 +1,11 @@
+# Podfile
+platform :ios, '10.0'
+use_frameworks!
+
+target 'YYBLEDemo1' do
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'SwiftLint'
+    pod 'Alamofire', '~> 5.2'
+    pod 'SnapKit', '~> 5.0.0'
+end

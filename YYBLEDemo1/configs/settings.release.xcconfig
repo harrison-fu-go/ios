@@ -1,0 +1,14 @@
+//
+//  settings.release.xcconfig
+//  YYBLEDemo1
+//
+//  Created by fuhuayou on 2021/4/16.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "settings.common.xcconfig"
+#include "Pods/Target Support Files//Pods-YYBLEDemo1/Pods-YYBLEDemo1.release.xcconfig"
+//ONLY_ACTIVE_ARCH = NO
+//ENABLE_BITCODE = YES
+//test = 123

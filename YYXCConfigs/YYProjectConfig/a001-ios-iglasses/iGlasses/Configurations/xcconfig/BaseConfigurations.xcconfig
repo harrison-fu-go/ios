@@ -1,0 +1,12 @@
+//
+//  BaseConfigurations.xcconfig
+//  iGlasses
+//
+//  Created by Matthew on 2021/4/9.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//API_BASE_URL = api.holoever.com
+API_BASE_URL = 8.135.118.239:8080

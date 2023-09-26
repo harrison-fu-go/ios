@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  YYRTL
+
+  Created by HarrisonFu on 2022/9/21.
+  
+*/
+"Main.welcome" = "Hello";
+"Main.start" = "Start";

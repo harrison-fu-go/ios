@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertViewPermission" customModule="iGlasses" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="JN8-0z-P1d" id="MuK-5v-E7L"/>
+                <outlet property="messageLabel" destination="uzO-gQ-L3d" id="TXN-Gf-jBx"/>
+                <outlet property="titleLabel" destination="cjT-im-Qgh" id="MFE-5t-ysX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JN8-0z-P1d">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOH-i3-Kc7">
+                    <rect key="frame" x="40" y="252" width="295" height="308"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Notice_Modal" translatesAutoresizingMaskIntoConstraints="NO" id="MPa-2c-bCo">
+                            <rect key="frame" x="0.0" y="0.0" width="295" height="308"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9z5-bE-JME">
+                            <rect key="frame" x="16" y="240" width="263" height="48"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="LvT-23-Y2g"/>
+                                <constraint firstAttribute="width" constant="263" id="irr-x4-CI2"/>
+                            </constraints>
+                            <state key="normal" image="Button_Upgrade"/>
+                            <connections>
+                                <action selector="ok:" destination="-1" eventType="touchUpInside" id="ams-Kt-VAP"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKD-Bg-Naw">
+                            <rect key="frame" x="131" y="248" width="33" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="TiY-Sf-jJ2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抱歉，您需要在手机开启蓝牙权限" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzO-gQ-L3d">
+                            <rect key="frame" x="32" y="191" width="231" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蓝牙权限" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjT-im-Qgh">
+                            <rect key="frame" x="20" y="158" width="255" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="9z5-bE-JME" firstAttribute="centerX" secondItem="VOH-i3-Kc7" secondAttribute="centerX" id="6cI-cI-mKr"/>
+                        <constraint firstItem="GKD-Bg-Naw" firstAttribute="centerX" secondItem="VOH-i3-Kc7" secondAttribute="centerX" id="CTv-fq-fKB"/>
+                        <constraint firstItem="cjT-im-Qgh" firstAttribute="centerX" secondItem="VOH-i3-Kc7" secondAttribute="centerX" id="DYs-Yq-Tg6"/>
+                        <constraint firstItem="uzO-gQ-L3d" firstAttribute="centerX" secondItem="VOH-i3-Kc7" secondAttribute="centerX" id="Kuc-t4-Irh"/>
+                        <constraint firstItem="cjT-im-Qgh" firstAttribute="leading" secondItem="VOH-i3-Kc7" secondAttribute="leading" constant="20" id="NVb-Sf-tsZ"/>
+                        <constraint firstAttribute="bottom" secondItem="MPa-2c-bCo" secondAttribute="bottom" id="TCu-sG-pje"/>
+                        <constraint firstItem="uzO-gQ-L3d" firstAttribute="top" secondItem="cjT-im-Qgh" secondAttribute="bottom" constant="12" id="Tf9-Z7-Q96"/>
+                        <constraint firstItem="9z5-bE-JME" firstAttribute="top" secondItem="uzO-gQ-L3d" secondAttribute="bottom" constant="32" id="UYw-Md-m0Q"/>
+                        <constraint firstAttribute="trailing" secondItem="cjT-im-Qgh" secondAttribute="trailing" constant="20" id="UdO-OS-Rfd"/>
+                        <constraint firstAttribute="bottom" secondItem="9z5-bE-JME" secondAttribute="bottom" constant="20" id="UqL-mF-KcO"/>
+                        <constraint firstAttribute="trailing" secondItem="uzO-gQ-L3d" secondAttribute="trailing" constant="32" id="Vlu-Wu-tAx"/>
+                        <constraint firstItem="MPa-2c-bCo" firstAttribute="leading" secondItem="VOH-i3-Kc7" secondAttribute="leading" id="YPU-EM-mii"/>
+                        <constraint firstItem="MPa-2c-bCo" firstAttribute="top" secondItem="VOH-i3-Kc7" secondAttribute="top" id="kOU-ZP-7Oe"/>
+                        <constraint firstItem="uzO-gQ-L3d" firstAttribute="leading" secondItem="VOH-i3-Kc7" secondAttribute="leading" constant="32" id="myO-Hh-btL"/>
+                        <constraint firstAttribute="bottom" secondItem="GKD-Bg-Naw" secondAttribute="bottom" constant="38" id="qkE-hc-nEj"/>
+                        <constraint firstAttribute="trailing" secondItem="MPa-2c-bCo" secondAttribute="trailing" id="tWr-Jp-ZPP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="G4p-eY-eo8"/>
+            <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VOH-i3-Kc7" firstAttribute="height" secondItem="JN8-0z-P1d" secondAttribute="width" multiplier="308:375" id="ELp-kb-80B"/>
+                <constraint firstItem="VOH-i3-Kc7" firstAttribute="centerX" secondItem="JN8-0z-P1d" secondAttribute="centerX" id="I8n-63-unZ"/>
+                <constraint firstItem="VOH-i3-Kc7" firstAttribute="width" secondItem="JN8-0z-P1d" secondAttribute="width" multiplier="295:375" id="MyD-hF-GhP"/>
+                <constraint firstItem="VOH-i3-Kc7" firstAttribute="centerY" secondItem="JN8-0z-P1d" secondAttribute="centerY" id="Oox-wC-lJO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="174.63768115942031" y="119.86607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Button_Upgrade" width="263" height="48"/>
+        <image name="Notice_Modal" width="295" height="308"/>
+    </resources>
+</document>

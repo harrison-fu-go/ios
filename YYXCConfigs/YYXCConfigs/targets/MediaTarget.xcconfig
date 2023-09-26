@@ -1,0 +1,14 @@
+//
+//  Media.xcconfig
+//  YYProjectConfig
+//
+//  Created by HarrisonFu on 2023/2/17.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "./Pods/Target Support Files/Pods-YYXCConfigs/Pods-YYXCConfigs.media.xcconfig"
+#include "BaseTarget.xcconfig"
+BUNBLE_DISPLAY_NAME = $(inherited)-media
+API_BASE_URL = "Media.go.fuhuayou"
+PRODUCT_VERSION = $(inherited)

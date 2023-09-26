@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'YYSwiftMonkey' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for YYSwiftMonkey
+  pod 'SwiftMonkeyPaws', '~> 2.2.0'	
+
+  target 'YYSwiftMonkeyTests' do
+    inherit! :search_paths
+    pod 'SwiftMonkey', '~> 2.2.0'
+    pod 'MimiSDK', podspec: 'https://api.integrate.mimi.io/files/sdk/ios/pods/latest.podspec'
+  end
+
+  target 'YYSwiftMonkeyUITests' do
+    pod 'SwiftMonkey', '~> 2.2.0'
+  end
+
+end

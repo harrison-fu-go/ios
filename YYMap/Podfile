@@ -1,0 +1,9 @@
+# Podfile
+platform :ios, '13.0'
+use_frameworks!
+
+target 'YYMap' do
+    pod 'AMap2DMap'
+    pod 'AMapSearch'
+    pod 'AMapLocation'
+end

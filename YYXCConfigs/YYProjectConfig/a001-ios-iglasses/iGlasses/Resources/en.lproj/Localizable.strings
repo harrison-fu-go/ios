@@ -1,0 +1,35 @@
+"userNameKey" = "User name";
+"home" = "Home Page";
+
+// Internal Menu
+"internalMenu.forbiddenArea" = "Hidden Features";
+"internalMenu.version" = "Version";
+"internalMenu.CFBundleVersion" = "CFBundleVersion";
+"internalMenu.generalInfo" = "General Info";
+"internalMenu.designElement" = "Design Element";
+"internalMenu.designDemo" = "Design Demo";
+"internalMenu.featureToggles" = "Feature Toggles";
+"internalMenu.tools" = "Tools";
+"internalMenu.crashApp" = "Crash App";
+
+"internalMenu.typography" = "Typography";
+"internalMenu.colors" = "Colors";
+"internalMenu.avatars" = "Avatars";
+
+"internalMenu.favoriteButton" = "Favorite button";
+"internalMenu.starFavoriteButton" = "Star favorite button";
+"internalMenu.heartFavoriteButton" = "Heart favorite button";
+
+"internalMenu.testButtonEnabled" = "Test Button Enable";
+
+// Development Message
+"development.fatalErrorSubclassToImplement" = "Subclass has to implement this function";
+"development.fatalErrorInitCoderNotImplemented" = "init(coder:) has not been implemented";
+
+// Mine page.
+"mine.title.operationIntroduce" = "Operation introduce";
+"mine.title.wearableControl" = "Wear control";
+"mine.title.hardwareUpdate" = "Hardware update";
+"mine.title.appUpdate" = "App update";
+
+"guide.list.error" = "Loading Data Error";

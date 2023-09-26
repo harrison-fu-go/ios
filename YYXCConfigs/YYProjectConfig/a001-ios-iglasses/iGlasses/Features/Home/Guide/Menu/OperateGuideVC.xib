@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OperateGuideVC" customModule="iGlasses" customModuleProvider="target">
+            <connections>
+                <outlet property="naviBar" destination="l1J-2U-7nB" id="RoZ-Oz-ENL"/>
+                <outlet property="tableView" destination="Afs-CA-EPC" id="irT-Ju-quv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1J-2U-7nB" customClass="HoloeverHeaderTitleSearchView" customModule="iGlasses" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="nZX-qo-ZmW"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Afs-CA-EPC">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="57S-2K-ru9"/>
+                        <outlet property="delegate" destination="-1" id="QB9-GF-4JT"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Afs-CA-EPC" secondAttribute="trailing" id="0pH-PD-1fu"/>
+                <constraint firstItem="l1J-2U-7nB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9iQ-qC-Mf2"/>
+                <constraint firstItem="l1J-2U-7nB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EiT-25-X0c"/>
+                <constraint firstItem="Afs-CA-EPC" firstAttribute="top" secondItem="l1J-2U-7nB" secondAttribute="bottom" id="Qg1-39-rWP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Afs-CA-EPC" secondAttribute="bottom" id="cCJ-HP-o2c"/>
+                <constraint firstItem="l1J-2U-7nB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="caf-aN-5iN"/>
+                <constraint firstItem="Afs-CA-EPC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wbC-Ku-VOj"/>
+            </constraints>
+            <point key="canvasLocation" x="-43" y="40"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,20 @@
+PODS:
+  - DeviceGuru (10.0.2):
+    - DeviceGuru/DeviceGuru (= 10.0.2)
+  - DeviceGuru/DeviceGuru (10.0.2):
+    - DeviceGuru/Resources
+  - DeviceGuru/Resources (10.0.2)
+
+DEPENDENCIES:
+  - DeviceGuru (~> 10.0.1)
+
+SPEC REPOS:
+  trunk:
+    - DeviceGuru
+
+SPEC CHECKSUMS:
+  DeviceGuru: b83dc46474b3e8335af2c9b18446310cddae2ccb
+
+PODFILE CHECKSUM: 0aa8a0cb7605d1979658235fa47fe4b1765780ce
+
+COCOAPODS: 1.11.3

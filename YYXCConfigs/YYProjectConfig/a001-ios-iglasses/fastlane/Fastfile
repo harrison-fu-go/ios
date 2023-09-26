@@ -1,0 +1,72 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  # Development
+  desc "Lint code"
+  lane :lint_code do
+    puts("Lint code using SwfitLint")
+    swiftlint(
+      mode: :lint,
+      executable: "./Pods/SwiftLint/swiftlint",  # The SwiftLint binary path (optional). Important if you've installed it via CocoaPods
+      config_file: './.swiftlint.yml',
+      raise_if_swiftlint_error: true)
+  end
+
+  desc "Lint and format code"
+  lane :format_code do
+    puts("Lint and format code using SwfitLint")
+    swiftlint(
+      mode: :autocorrect,
+      executable: "./Pods/SwiftLint/swiftlint",  # The SwiftLint binary path (optional). Important if you've installed it via CocoaPods
+      config_file: './.swiftlint.yml',
+      raise_if_swiftlint_error: true)
+  end
+
+  desc "Sort Xcode project files"
+  lane :sort_files do
+    puts("Sort the files for the Xcode project")
+    sh "../scripts/sort-Xcode-project-file.pl ../iGlasses.xcodeproj"
+  end
+
+  desc "Prepare for a pull request"
+  lane :prepare_pr do
+    format_code
+    sort_files
+  end
+
+  desc "Build development app"
+  lane :build_dev_app do
+    puts("Build development app")
+    gym(scheme: "iGlasses",
+      workspace: "iGlasses.xcworkspace",
+      configuration: "Debug",
+      xcargs: "-allowProvisioningUpdates")
+  end
+
+  # Test
+  desc "Run unit tests"
+  lane :tests do
+    puts("Run the tests")
+    run_tests(
+      scheme: "iGlasses", 
+      output_directory: "./fastlane/dist", 
+      output_types: "html", 
+      buildlog_path: "./fastlane/dist")
+  end
+
+end

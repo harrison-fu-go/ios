@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8253D73F258313EC00F784CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8253D73E258313EC00F784CE /* AppDelegate.m */; };
+		8253D742258313EC00F784CE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8253D741258313EC00F784CE /* SceneDelegate.m */; };
+		8253D745258313EC00F784CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8253D744258313EC00F784CE /* ViewController.m */; };
+		8253D748258313EC00F784CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8253D746258313EC00F784CE /* Main.storyboard */; };
+		8253D74A258313EF00F784CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8253D749258313EF00F784CE /* Assets.xcassets */; };
+		8253D74D258313EF00F784CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8253D74B258313EF00F784CE /* LaunchScreen.storyboard */; };
+		8253D750258313EF00F784CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8253D74F258313EF00F784CE /* main.m */; };
+		8253D75A258313F000F784CE /* APPLE_SIGNIN_DEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8253D759258313F000F784CE /* APPLE_SIGNIN_DEMOTests.m */; };
+		8253D765258313F000F784CE /* APPLE_SIGNIN_DEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8253D764258313F000F784CE /* APPLE_SIGNIN_DEMOUITests.m */; };
+		8253D7862583155800F784CE /* YYAppleSignInManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8253D7852583155800F784CE /* YYAppleSignInManager.m */; };
+		8256E702258B3E3C000A0216 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8256E701258B3E3C000A0216 /* ExternalAccessory.framework */; };
+		825DBA062589126E00C86ED0 /* YYWifiMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 825DBA042589126E00C86ED0 /* YYWifiMgr.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8253D756258313F000F784CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8253D732258313EC00F784CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8253D739258313EC00F784CE;
+			remoteInfo = APPLE_SIGNIN_DEMO;
+		};
+		8253D761258313F000F784CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8253D732258313EC00F784CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8253D739258313EC00F784CE;
+			remoteInfo = APPLE_SIGNIN_DEMO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8253D73A258313EC00F784CE /* APPLE_SIGNIN_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APPLE_SIGNIN_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8253D73D258313EC00F784CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8253D73E258313EC00F784CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8253D740258313EC00F784CE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8253D741258313EC00F784CE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		8253D743258313EC00F784CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8253D744258313EC00F784CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8253D747258313EC00F784CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8253D749258313EF00F784CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8253D74C258313EF00F784CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8253D74E258313EF00F784CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8253D74F258313EF00F784CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8253D755258313F000F784CE /* APPLE_SIGNIN_DEMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APPLE_SIGNIN_DEMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8253D759258313F000F784CE /* APPLE_SIGNIN_DEMOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPLE_SIGNIN_DEMOTests.m; sourceTree = "<group>"; };
+		8253D75B258313F000F784CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8253D760258313F000F784CE /* APPLE_SIGNIN_DEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APPLE_SIGNIN_DEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8253D764258313F000F784CE /* APPLE_SIGNIN_DEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPLE_SIGNIN_DEMOUITests.m; sourceTree = "<group>"; };
+		8253D766258313F000F784CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8253D7842583155800F784CE /* YYAppleSignInManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYAppleSignInManager.h; sourceTree = "<group>"; };
+		8253D7852583155800F784CE /* YYAppleSignInManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYAppleSignInManager.m; sourceTree = "<group>"; };
+		8253D78A258322B800F784CE /* APPLE_SIGNIN_DEMO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APPLE_SIGNIN_DEMO.entitlements; sourceTree = "<group>"; };
+		8256E701258B3E3C000A0216 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		825DBA042589126E00C86ED0 /* YYWifiMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWifiMgr.m; sourceTree = "<group>"; };
+		825DBA052589126E00C86ED0 /* YYWifiMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWifiMgr.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8253D737258313EC00F784CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8256E702258B3E3C000A0216 /* ExternalAccessory.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8253D752258313F000F784CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8253D75D258313F000F784CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8253D731258313EC00F784CE = {
+			isa = PBXGroup;
+			children = (
+				8253D73C258313EC00F784CE /* APPLE_SIGNIN_DEMO */,
+				8253D758258313F000F784CE /* APPLE_SIGNIN_DEMOTests */,
+				8253D763258313F000F784CE /* APPLE_SIGNIN_DEMOUITests */,
+				8253D73B258313EC00F784CE /* Products */,
+				8256E700258B3E3C000A0216 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8253D73B258313EC00F784CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8253D73A258313EC00F784CE /* APPLE_SIGNIN_DEMO.app */,
+				8253D755258313F000F784CE /* APPLE_SIGNIN_DEMOTests.xctest */,
+				8253D760258313F000F784CE /* APPLE_SIGNIN_DEMOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8253D73C258313EC00F784CE /* APPLE_SIGNIN_DEMO */ = {
+			isa = PBXGroup;
+			children = (
+				825DBA032589126E00C86ED0 /* WIFI */,
+				8253D78A258322B800F784CE /* APPLE_SIGNIN_DEMO.entitlements */,
+				8253D7842583155800F784CE /* YYAppleSignInManager.h */,
+				8253D7852583155800F784CE /* YYAppleSignInManager.m */,
+				8253D73D258313EC00F784CE /* AppDelegate.h */,
+				8253D73E258313EC00F784CE /* AppDelegate.m */,
+				8253D740258313EC00F784CE /* SceneDelegate.h */,
+				8253D741258313EC00F784CE /* SceneDelegate.m */,
+				8253D743258313EC00F784CE /* ViewController.h */,
+				8253D744258313EC00F784CE /* ViewController.m */,
+				8253D746258313EC00F784CE /* Main.storyboard */,
+				8253D749258313EF00F784CE /* Assets.xcassets */,
+				8253D74B258313EF00F784CE /* LaunchScreen.storyboard */,
+				8253D74E258313EF00F784CE /* Info.plist */,
+				8253D74F258313EF00F784CE /* main.m */,
+			);
+			path = APPLE_SIGNIN_DEMO;
+			sourceTree = "<group>";
+		};
+		8253D758258313F000F784CE /* APPLE_SIGNIN_DEMOTests */ = {
+			isa = PBXGroup;
+			children = (
+				8253D759258313F000F784CE /* APPLE_SIGNIN_DEMOTests.m */,
+				8253D75B258313F000F784CE /* Info.plist */,
+			);
+			path = APPLE_SIGNIN_DEMOTests;
+			sourceTree = "<group>";
+		};
+		8253D763258313F000F784CE /* APPLE_SIGNIN_DEMOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8253D764258313F000F784CE /* APPLE_SIGNIN_DEMOUITests.m */,
+				8253D766258313F000F784CE /* Info.plist */,
+			);
+			path = APPLE_SIGNIN_DEMOUITests;
+			sourceTree = "<group>";
+		};
+		8256E700258B3E3C000A0216 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8256E701258B3E3C000A0216 /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		825DBA032589126E00C86ED0 /* WIFI */ = {
+			isa = PBXGroup;
+			children = (
+				825DBA052589126E00C86ED0 /* YYWifiMgr.h */,
+				825DBA042589126E00C86ED0 /* YYWifiMgr.m */,
+			);
+			path = WIFI;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8253D739258313EC00F784CE /* APPLE_SIGNIN_DEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8253D769258313F000F784CE /* Build configuration list for PBXNativeTarget "APPLE_SIGNIN_DEMO" */;
+			buildPhases = (
+				8253D736258313EC00F784CE /* Sources */,
+				8253D737258313EC00F784CE /* Frameworks */,
+				8253D738258313EC00F784CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APPLE_SIGNIN_DEMO;
+			productName = APPLE_SIGNIN_DEMO;
+			productReference = 8253D73A258313EC00F784CE /* APPLE_SIGNIN_DEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8253D754258313F000F784CE /* APPLE_SIGNIN_DEMOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8253D76C258313F000F784CE /* Build configuration list for PBXNativeTarget "APPLE_SIGNIN_DEMOTests" */;
+			buildPhases = (
+				8253D751258313F000F784CE /* Sources */,
+				8253D752258313F000F784CE /* Frameworks */,
+				8253D753258313F000F784CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8253D757258313F000F784CE /* PBXTargetDependency */,
+			);
+			name = APPLE_SIGNIN_DEMOTests;
+			productName = APPLE_SIGNIN_DEMOTests;
+			productReference = 8253D755258313F000F784CE /* APPLE_SIGNIN_DEMOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8253D75F258313F000F784CE /* APPLE_SIGNIN_DEMOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8253D76F258313F000F784CE /* Build configuration list for PBXNativeTarget "APPLE_SIGNIN_DEMOUITests" */;
+			buildPhases = (
+				8253D75C258313F000F784CE /* Sources */,
+				8253D75D258313F000F784CE /* Frameworks */,
+				8253D75E258313F000F784CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8253D762258313F000F784CE /* PBXTargetDependency */,
+			);
+			name = APPLE_SIGNIN_DEMOUITests;
+			productName = APPLE_SIGNIN_DEMOUITests;
+			productReference = 8253D760258313F000F784CE /* APPLE_SIGNIN_DEMOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8253D732258313EC00F784CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					8253D739258313EC00F784CE = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					8253D754258313F000F784CE = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 8253D739258313EC00F784CE;
+					};
+					8253D75F258313F000F784CE = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 8253D739258313EC00F784CE;
+					};
+				};
+			};
+			buildConfigurationList = 8253D735258313EC00F784CE /* Build configuration list for PBXProject "APPLE_SIGNIN_DEMO" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8253D731258313EC00F784CE;
+			productRefGroup = 8253D73B258313EC00F784CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8253D739258313EC00F784CE /* APPLE_SIGNIN_DEMO */,
+				8253D754258313F000F784CE /* APPLE_SIGNIN_DEMOTests */,
+				8253D75F258313F000F784CE /* APPLE_SIGNIN_DEMOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8253D738258313EC00F784CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8253D74D258313EF00F784CE /* LaunchScreen.storyboard in Resources */,
+				8253D74A258313EF00F784CE /* Assets.xcassets in Resources */,
+				8253D748258313EC00F784CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8253D753258313F000F784CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8253D75E258313F000F784CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8253D736258313EC00F784CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8253D745258313EC00F784CE /* ViewController.m in Sources */,
+				8253D7862583155800F784CE /* YYAppleSignInManager.m in Sources */,
+				8253D73F258313EC00F784CE /* AppDelegate.m in Sources */,
+				825DBA062589126E00C86ED0 /* YYWifiMgr.m in Sources */,
+				8253D750258313EF00F784CE /* main.m in Sources */,
+				8253D742258313EC00F784CE /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8253D751258313F000F784CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8253D75A258313F000F784CE /* APPLE_SIGNIN_DEMOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8253D75C258313F000F784CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8253D765258313F000F784CE /* APPLE_SIGNIN_DEMOUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8253D757258313F000F784CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8253D739258313EC00F784CE /* APPLE_SIGNIN_DEMO */;
+			targetProxy = 8253D756258313F000F784CE /* PBXContainerItemProxy */;
+		};
+		8253D762258313F000F784CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8253D739258313EC00F784CE /* APPLE_SIGNIN_DEMO */;
+			targetProxy = 8253D761258313F000F784CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8253D746258313EC00F784CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8253D747258313EC00F784CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8253D74B258313EF00F784CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8253D74C258313EF00F784CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8253D767258313F000F784CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8253D768258313F000F784CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8253D76A258313F000F784CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = APPLE_SIGNIN_DEMO/APPLE_SIGNIN_DEMO.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67M35E8KE4;
+				INFOPLIST_FILE = APPLE_SIGNIN_DEMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mykronoz.APPLE-SIGNIN-DEMO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8253D76B258313F000F784CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = APPLE_SIGNIN_DEMO/APPLE_SIGNIN_DEMO.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67M35E8KE4;
+				INFOPLIST_FILE = APPLE_SIGNIN_DEMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mykronoz.APPLE-SIGNIN-DEMO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8253D76D258313F000F784CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67M35E8KE4;
+				INFOPLIST_FILE = APPLE_SIGNIN_DEMOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mykronoz.APPLE-SIGNIN-DEMOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APPLE_SIGNIN_DEMO.app/APPLE_SIGNIN_DEMO";
+			};
+			name = Debug;
+		};
+		8253D76E258313F000F784CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67M35E8KE4;
+				INFOPLIST_FILE = APPLE_SIGNIN_DEMOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mykronoz.APPLE-SIGNIN-DEMOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APPLE_SIGNIN_DEMO.app/APPLE_SIGNIN_DEMO";
+			};
+			name = Release;
+		};
+		8253D770258313F000F784CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67M35E8KE4;
+				INFOPLIST_FILE = APPLE_SIGNIN_DEMOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mykronoz.APPLE-SIGNIN-DEMOUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = APPLE_SIGNIN_DEMO;
+			};
+			name = Debug;
+		};
+		8253D771258313F000F784CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67M35E8KE4;
+				INFOPLIST_FILE = APPLE_SIGNIN_DEMOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mykronoz.APPLE-SIGNIN-DEMOUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = APPLE_SIGNIN_DEMO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8253D735258313EC00F784CE /* Build configuration list for PBXProject "APPLE_SIGNIN_DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8253D767258313F000F784CE /* Debug */,
+				8253D768258313F000F784CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8253D769258313F000F784CE /* Build configuration list for PBXNativeTarget "APPLE_SIGNIN_DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8253D76A258313F000F784CE /* Debug */,
+				8253D76B258313F000F784CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8253D76C258313F000F784CE /* Build configuration list for PBXNativeTarget "APPLE_SIGNIN_DEMOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8253D76D258313F000F784CE /* Debug */,
+				8253D76E258313F000F784CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8253D76F258313F000F784CE /* Build configuration list for PBXNativeTarget "APPLE_SIGNIN_DEMOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8253D770258313F000F784CE /* Debug */,
+				8253D771258313F000F784CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8253D732258313EC00F784CE /* Project object */;
+}

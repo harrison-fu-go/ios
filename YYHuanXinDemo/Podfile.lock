@@ -1,0 +1,16 @@
+PODS:
+  - HyphenateChat (3.9.0)
+
+DEPENDENCIES:
+  - HyphenateChat
+
+SPEC REPOS:
+  trunk:
+    - HyphenateChat
+
+SPEC CHECKSUMS:
+  HyphenateChat: fc53c79682cdc775eb788296627331e135b49a52
+
+PODFILE CHECKSUM: 581d98aa2226b33dc01a01166b2ededbb2cf44f4
+
+COCOAPODS: 1.11.2

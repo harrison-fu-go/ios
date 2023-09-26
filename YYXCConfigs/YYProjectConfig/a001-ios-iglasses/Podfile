@@ -1,0 +1,76 @@
+source 'https://github.com/cocoapods/specs.git'
+
+workspace './iGlasses.xcworkspace'
+project './iGlasses.xcodeproj'
+
+platform :ios, '11.0'
+use_frameworks!
+
+# ignore all warnings from all dependencies
+inhibit_all_warnings!
+
+def dev_pods
+  pod 'SwiftLint', '= 0.42.0', configurations: ['Debug']
+  pod 'SwiftGen', '= 6.4.0', configurations: ['Debug']
+end
+
+def core_pods
+  pod 'RxSwift', '= 6.1.0'
+  pod 'RxRelay', '= 6.1.0'
+  pod 'Alamofire', '= 5.4.1'
+  pod 'Moya'
+  pod 'FMDB', '= 2.7.5'
+  pod 'CryptoSwift', '= 1.4.1'
+end
+
+def thirdparty_pods
+  pod 'Bugly', '= 2.5.71'
+end
+
+def ui_pods
+  pod 'SnapKit', '= 5.0.1'
+  pod 'Kingfisher', '= 6.1.1'
+  pod 'RxCocoa', '= 6.1.0'
+  pod 'SVProgressHUD', '= 2.2.5'
+  pod 'lottie-ios', '= 3.2.1'
+  pod 'IQKeyboardManager', '= 6.5.6'
+  pod 'MJRefresh', '= 3.5.0'
+end
+
+def internal_pods
+  
+end
+
+def test_pods
+  pod 'RxTest', '= 6.1.0'
+  pod 'RxBlocking', '= 6.1.0'
+end
+
+target 'iGlasses' do
+  dev_pods
+  core_pods
+  thirdparty_pods
+  ui_pods
+  internal_pods
+end
+
+target 'iGlassesTests' do
+  inherit! :search_paths
+  core_pods
+  thirdparty_pods
+  test_pods
+end
+
+target 'iGlassesUITests' do
+  # Pods for testing
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+    end
+  end
+end
+

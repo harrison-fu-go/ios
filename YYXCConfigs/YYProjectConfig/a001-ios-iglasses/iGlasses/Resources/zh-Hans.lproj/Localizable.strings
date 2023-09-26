@@ -1,0 +1,34 @@
+"userNameKey" = "用户名";
+"home" = "主页";
+
+"internalMenu.forbiddenArea" = "隐藏功能";
+"internalMenu.version" = "版本";
+"internalMenu.CFBundleVersion" = "CFBundleVersion";
+"internalMenu.generalInfo" = "通用信息";
+"internalMenu.designElement" = "设计元素";
+"internalMenu.designDemo" = "设计示例";
+"internalMenu.featureToggles" = "功能开关";
+"internalMenu.tools" = "工具箱";
+"internalMenu.crashApp" = "闪退 App";
+
+"internalMenu.typography" = "字体";
+"internalMenu.colors" = "颜色";
+"internalMenu.avatars" = "人像";
+
+"internalMenu.favoriteButton" = "点赞按钮";
+"internalMenu.starFavoriteButton" = "星形点赞按钮";
+"internalMenu.heartFavoriteButton" = "心形点赞按钮";
+
+"internalMenu.testButtonEnabled" = "开启测试按钮";
+
+// Development Message
+"development.fatalErrorSubclassToImplement" = "Subclass has to implement this function";
+"development.fatalErrorInitCoderNotImplemented" = "init(coder:) has not been implemented";
+
+// Mine page.
+"mine.title.operationIntroduce" = "操作设置说明";
+"mine.title.wearableControl" = "佩戴监测";
+"mine.title.hardwareUpdate" = "眼镜端固件更新";
+"mine.title.appUpdate" = "手机端软件更新";
+
+"guide.list.error" = "加载数据出错";

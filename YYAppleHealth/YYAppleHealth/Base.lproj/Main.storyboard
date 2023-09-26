@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbT-7n-087">
+                                <rect key="frame" x="91.5" y="149" width="231" height="84"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="jVx-P1-28A"/>
+                                    <constraint firstAttribute="height" constant="84" id="kk9-PR-yRZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Goto Authorize"/>
+                                <connections>
+                                    <action selector="gotoAuthorize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sj6-nH-Uot"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khX-Ax-1fS">
+                                <rect key="frame" x="91.5" y="309" width="231" height="84"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="PTJ-Dl-tFT"/>
+                                    <constraint firstAttribute="height" constant="84" id="rxD-Ec-LPD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Get Authorize Status"/>
+                                <connections>
+                                    <action selector="getAuthorizeStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3m-9B-Cdx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0c-Ng-YI5">
+                                <rect key="frame" x="91.5" y="454" width="231" height="84"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="kGZ-Mk-Syx"/>
+                                    <constraint firstAttribute="height" constant="84" id="qw3-tQ-Yk9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Post testing data"/>
+                                <connections>
+                                    <action selector="testPostData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rYM-TF-plA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tbT-7n-087" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YtY-at-tZq"/>
+                            <constraint firstItem="n0c-Ng-YI5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b6y-Kz-s9T"/>
+                            <constraint firstItem="khX-Ax-1fS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c6u-LM-aFb"/>
+                            <constraint firstItem="n0c-Ng-YI5" firstAttribute="top" secondItem="khX-Ax-1fS" secondAttribute="bottom" constant="61" id="ld7-eW-GXo"/>
+                            <constraint firstItem="tbT-7n-087" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="sdV-q2-kUD"/>
+                            <constraint firstItem="khX-Ax-1fS" firstAttribute="top" secondItem="tbT-7n-087" secondAttribute="bottom" constant="76" id="xYf-lY-DeV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

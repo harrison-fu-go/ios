@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WearManageVC" customModule="iGlasses" customModuleProvider="target">
+            <connections>
+                <outlet property="naviBar" destination="DlS-uK-Lro" id="sFP-vV-J8c"/>
+                <outlet property="tableView" destination="nlM-5s-Iff" id="eSf-wJ-oLo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="xoz-RN-DAF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shF-MD-F5G">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.95686274509803915" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nlM-5s-Iff">
+                    <rect key="frame" x="0.0" y="104" width="414" height="709"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="9cv-wx-heY"/>
+                        <outlet property="delegate" destination="-1" id="bCP-Ry-Dv7"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DlS-uK-Lro" customClass="HoloeverHeaderTitleSearchView" customModule="iGlasses" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="gDc-kG-RMo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="shF-MD-F5G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0T6-Qr-Qhf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nlM-5s-Iff" secondAttribute="bottom" id="0zd-dc-p5S"/>
+                <constraint firstItem="DlS-uK-Lro" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2WK-wF-YF6"/>
+                <constraint firstAttribute="trailing" secondItem="shF-MD-F5G" secondAttribute="trailing" id="2rA-8i-Tz5"/>
+                <constraint firstItem="shF-MD-F5G" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="EV6-e3-C9J"/>
+                <constraint firstAttribute="bottom" secondItem="shF-MD-F5G" secondAttribute="bottom" id="Jb8-OW-73N"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DlS-uK-Lro" secondAttribute="trailing" id="NEt-Uk-sGO"/>
+                <constraint firstItem="nlM-5s-Iff" firstAttribute="top" secondItem="DlS-uK-Lro" secondAttribute="bottom" constant="16" id="TMG-nx-1Xf"/>
+                <constraint firstItem="DlS-uK-Lro" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Tp7-ud-Cln"/>
+                <constraint firstItem="nlM-5s-Iff" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hy0-pV-oWD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nlM-5s-Iff" secondAttribute="trailing" id="yh2-jJ-yBw"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+            <point key="canvasLocation" x="-223.18840579710147" y="136.60714285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

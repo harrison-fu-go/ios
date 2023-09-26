@@ -1,0 +1,15 @@
+//
+//  BaseScheme.xcconfig
+//  YYProjectConfig
+//
+//  Created by HarrisonFu on 2023/2/17.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+// Versioning
+PRODUCT_VERSION = 2.2.0
+
+BUNBLE_DISPLAY_NAME = Nothing X
+
+API_BASE_URL = "AppStore.go.fuhuayou"

@@ -1,0 +1,27 @@
+PODS:
+  - MimiSDK (6.1.0)
+  - SwiftMonkey (2.2.0)
+  - SwiftMonkeyPaws (2.2.0)
+
+DEPENDENCIES:
+  - MimiSDK (from `https://api.integrate.mimi.io/files/sdk/ios/pods/latest.podspec`)
+  - SwiftMonkey (~> 2.2.0)
+  - SwiftMonkeyPaws (~> 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - SwiftMonkey
+    - SwiftMonkeyPaws
+
+EXTERNAL SOURCES:
+  MimiSDK:
+    :podspec: https://api.integrate.mimi.io/files/sdk/ios/pods/latest.podspec
+
+SPEC CHECKSUMS:
+  MimiSDK: 9a15f27f78a05f6452bcda827f715e386260756a
+  SwiftMonkey: 24ffde5b590d3658cfcb1d775cf74b9f5280eb9c
+  SwiftMonkeyPaws: 9d183b8a1b9cfd497c2704342e861b71412d94f5
+
+PODFILE CHECKSUM: fe8eab2b6c19349d4cae3d7d539cd89d499c5e46
+
+COCOAPODS: 1.11.3

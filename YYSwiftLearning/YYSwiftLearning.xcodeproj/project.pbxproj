@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		180917302AB8454400A761B4 /* YYFilePathVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809172F2AB8454400A761B4 /* YYFilePathVC.swift */; };
+		180917732AD264DD00A761B4 /* 关于use_frameworks! 的分析.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180917722AD264DD00A761B4 /* 关于use_frameworks! 的分析.swift */; };
 		181911FC2AB2A781003FDBFA /* YYCsvCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181911FB2AB2A781003FDBFA /* YYCsvCenter.swift */; };
 		181911FE2AB2A870003FDBFA /* YYCSVVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181911FD2AB2A870003FDBFA /* YYCSVVC.swift */; };
 		1828879D2A49423000E0AC9A /* CollectionCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828879C2A49423000E0AC9A /* CollectionCardVC.swift */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		1809172F2AB8454400A761B4 /* YYFilePathVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYFilePathVC.swift; sourceTree = "<group>"; };
+		180917722AD264DD00A761B4 /* 关于use_frameworks! 的分析.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "关于use_frameworks! 的分析.swift"; sourceTree = "<group>"; };
 		181911FB2AB2A781003FDBFA /* YYCsvCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYCsvCenter.swift; sourceTree = "<group>"; };
 		181911FD2AB2A870003FDBFA /* YYCSVVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYCSVVC.swift; sourceTree = "<group>"; };
 		1828879C2A49423000E0AC9A /* CollectionCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCardVC.swift; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 			path = "沙盒文件";
 			sourceTree = "<group>";
 		};
+		180917712AD2648F00A761B4 /* cocopods */ = {
+			isa = PBXGroup;
+			children = (
+				180917722AD264DD00A761B4 /* 关于use_frameworks! 的分析.swift */,
+			);
+			path = cocopods;
+			sourceTree = "<group>";
+		};
 		181911FA2AB2A760003FDBFA /* CSV文件 */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +219,7 @@
 		32A1ABE526D621D30011B11D /* YYSwiftLearning */ = {
 			isa = PBXGroup;
 			children = (
+				180917712AD2648F00A761B4 /* cocopods */,
 				1809172E2AB8452700A761B4 /* 沙盒文件 */,
 				181911FA2AB2A760003FDBFA /* CSV文件 */,
 				1828879B2A493F7E00E0AC9A /* CollectionView切换卡片研究 */,
@@ -514,6 +525,7 @@
 				18354E3129EFD063001E49C6 /* NTEQ.swift in Sources */,
 				1843AF7429924CC5009DC271 /* Shader.metal in Sources */,
 				32A1ABE726D621D30011B11D /* AppDelegate.swift in Sources */,
+				180917732AD264DD00A761B4 /* 关于use_frameworks! 的分析.swift in Sources */,
 				32A1AC1726D623190011B11D /* Person.swift in Sources */,
 				18354E3029EFD062001E49C6 /* NTEQPath.swift in Sources */,
 				180917302AB8454400A761B4 /* YYFilePathVC.swift in Sources */,

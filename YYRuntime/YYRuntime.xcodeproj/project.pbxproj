@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18139C2B2AD2B2EE0019AE42 /* YYTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18139C2A2AD2B2EE0019AE42 /* YYTestModel.m */; };
+		18139C2D2AD2BB650019AE42 /* isa的关系探究.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18139C2C2AD2BB650019AE42 /* isa的关系探究.swift */; };
 		8269A9042761D135000527D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8269A9032761D135000527D3 /* AppDelegate.m */; };
 		8269A9072761D135000527D3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8269A9062761D135000527D3 /* SceneDelegate.m */; };
 		8269A90A2761D135000527D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8269A9092761D135000527D3 /* ViewController.m */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18139C292AD2B2EE0019AE42 /* YYTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTestModel.h; sourceTree = "<group>"; };
+		18139C2A2AD2B2EE0019AE42 /* YYTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTestModel.m; sourceTree = "<group>"; };
+		18139C2C2AD2BB650019AE42 /* isa的关系探究.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "isa的关系探究.swift"; sourceTree = "<group>"; };
 		8269A8FF2761D135000527D3 /* YYRuntime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYRuntime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8269A9022761D135000527D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8269A9032761D135000527D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +109,9 @@
 		8269A9012761D135000527D3 /* YYRuntime */ = {
 			isa = PBXGroup;
 			children = (
+				18139C2C2AD2BB650019AE42 /* isa的关系探究.swift */,
+				18139C292AD2B2EE0019AE42 /* YYTestModel.h */,
+				18139C2A2AD2B2EE0019AE42 /* YYTestModel.m */,
 				8269A9022761D135000527D3 /* AppDelegate.h */,
 				8269A9032761D135000527D3 /* AppDelegate.m */,
 				8269A9052761D135000527D3 /* SceneDelegate.h */,
@@ -203,6 +211,7 @@
 				TargetAttributes = {
 					8269A8FE2761D135000527D3 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1430;
 					};
 					8269A9192761D138000527D3 = {
 						CreatedOnToolsVersion = 13.1;
@@ -266,9 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18139C2D2AD2BB650019AE42 /* isa的关系探究.swift in Sources */,
 				8269A90A2761D135000527D3 /* ViewController.m in Sources */,
 				8269A9042761D135000527D3 /* AppDelegate.m in Sources */,
 				8269A9152761D137000527D3 /* main.m in Sources */,
+				18139C2B2AD2B2EE0019AE42 /* YYTestModel.m in Sources */,
 				8269A9072761D135000527D3 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,9 +453,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3WWYF2H4Z6;
+				DEVELOPMENT_TEAM = 8TQG57X94B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YYRuntime/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -461,6 +473,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fuhuayou.YYRuntime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -470,9 +484,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3WWYF2H4Z6;
+				DEVELOPMENT_TEAM = 8TQG57X94B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YYRuntime/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -489,6 +504,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fuhuayou.YYRuntime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -496,6 +512,7 @@
 		8269A9322761D138000527D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -519,6 +536,7 @@
 		8269A9332761D138000527D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -542,6 +560,7 @@
 		8269A9352761D138000527D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3WWYF2H4Z6;
@@ -563,6 +582,7 @@
 		8269A9362761D138000527D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3WWYF2H4Z6;

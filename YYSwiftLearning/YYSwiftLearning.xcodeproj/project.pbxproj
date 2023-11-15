@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		180917302AB8454400A761B4 /* YYFilePathVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809172F2AB8454400A761B4 /* YYFilePathVC.swift */; };
 		180917732AD264DD00A761B4 /* 关于use_frameworks! 的分析.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180917722AD264DD00A761B4 /* 关于use_frameworks! 的分析.swift */; };
+		1816E49B2AD63D9500FAB752 /* YYAsyncAwaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816E49A2AD63D9500FAB752 /* YYAsyncAwaitVC.swift */; };
 		181911FC2AB2A781003FDBFA /* YYCsvCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181911FB2AB2A781003FDBFA /* YYCsvCenter.swift */; };
 		181911FE2AB2A870003FDBFA /* YYCSVVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181911FD2AB2A870003FDBFA /* YYCSVVC.swift */; };
 		1828879D2A49423000E0AC9A /* CollectionCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828879C2A49423000E0AC9A /* CollectionCardVC.swift */; };
@@ -56,6 +57,7 @@
 /* Begin PBXFileReference section */
 		1809172F2AB8454400A761B4 /* YYFilePathVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYFilePathVC.swift; sourceTree = "<group>"; };
 		180917722AD264DD00A761B4 /* 关于use_frameworks! 的分析.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "关于use_frameworks! 的分析.swift"; sourceTree = "<group>"; };
+		1816E49A2AD63D9500FAB752 /* YYAsyncAwaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAsyncAwaitVC.swift; sourceTree = "<group>"; };
 		181911FB2AB2A781003FDBFA /* YYCsvCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYCsvCenter.swift; sourceTree = "<group>"; };
 		181911FD2AB2A870003FDBFA /* YYCSVVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYCSVVC.swift; sourceTree = "<group>"; };
 		1828879C2A49423000E0AC9A /* CollectionCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCardVC.swift; sourceTree = "<group>"; };
@@ -149,6 +151,14 @@
 			path = cocopods;
 			sourceTree = "<group>";
 		};
+		1816E4992AD63D0900FAB752 /* async_await的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				1816E49A2AD63D9500FAB752 /* YYAsyncAwaitVC.swift */,
+			);
+			path = "async_await的使用";
+			sourceTree = "<group>";
+		};
 		181911FA2AB2A760003FDBFA /* CSV文件 */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +229,7 @@
 		32A1ABE526D621D30011B11D /* YYSwiftLearning */ = {
 			isa = PBXGroup;
 			children = (
+				1816E4992AD63D0900FAB752 /* async_await的使用 */,
 				180917712AD2648F00A761B4 /* cocopods */,
 				1809172E2AB8452700A761B4 /* 沙盒文件 */,
 				181911FA2AB2A760003FDBFA /* CSV文件 */,
@@ -536,6 +547,7 @@
 				1828879D2A49423000E0AC9A /* CollectionCardVC.swift in Sources */,
 				181911FE2AB2A870003FDBFA /* YYCSVVC.swift in Sources */,
 				18354E3329EFD082001E49C6 /* YYChartVC.swift in Sources */,
+				1816E49B2AD63D9500FAB752 /* YYAsyncAwaitVC.swift in Sources */,
 				1854AB3F2A66481600C6767B /* YYBezierPathAnimationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

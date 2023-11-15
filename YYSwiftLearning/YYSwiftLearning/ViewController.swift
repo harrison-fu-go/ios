@@ -32,9 +32,14 @@ class ViewController: UIViewController {
         let dData = Data([0xD8, 0xFF, 0xFF, 0xFF]) //FFFF FF
         let vals = Data(dData).toArray(type: Int32.self)
         print("===== \(vals)")
+        
+        
+        let iii = ["00": 10, "11":false] as [String : Any]
+        let val = iii["00"] as? Int ?? 99
+        print("===========???  \(val)")
     }
     
-
+    
     //MARK: 指针的研究和学习
     @IBAction func onPointerTesting(_ sender: AnyObject) {
         SwiftPointer().structPointerTesting()
@@ -76,6 +81,10 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func gotoAsyncAwaitVC(_ sender: AnyObject) {
+        let vc = YYAsyncAwaitVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     func setupLongpress() {
         guard let longpressBtn = longpressBtn else { return }

@@ -1,0 +1,29 @@
+PODS:
+  - Localize-Swift (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
+    - Localize-Swift/UIKit (= 3.2.0)
+  - Localize-Swift/LocalizeSwiftCore (3.2.0)
+  - Localize-Swift/UIKit (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore
+  - lottie-ios (4.1.3)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Localize-Swift (~> 3.2.0)
+  - lottie-ios (~> 4.1.3)
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Localize-Swift
+    - lottie-ios
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
+  lottie-ios: d0954d3150061f662ed0adf96ef98d7421864c47
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: bafd6d324620cab5e9be7301cad38d542e0be50b
+
+COCOAPODS: 1.12.0

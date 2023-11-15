@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
+#import "YYTestModel.h"
 @interface ViewController ()
 @property(nonatomic, strong)NSString *name;
 @property(nonatomic, assign)int age;
@@ -21,6 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.name = @"fhy";
+    
+    YYTestModel *model = [[YYTestModel alloc] init];
+    model.name = @"model...";
+    
     //properties.
     [ViewController getProperties:[ViewController class]];
     //ivrs
@@ -46,7 +51,7 @@
         Method method = methods[i];
         // 获取属性的名称 C语言字符串
         
-        const char *cName =sel_getName(method_getName(method));
+        const char *cName = sel_getName(method_getName(method));
         // 转换为Objective C 字符串
         NSString *name = [NSString stringWithCString:cName encoding:NSUTF8StringEncoding];
         NSLog(@"method_getName name====== %@",name);

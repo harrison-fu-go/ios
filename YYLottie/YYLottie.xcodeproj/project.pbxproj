@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18BD93CA2B0476DA00A683C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BD93C92B0476DA00A683C6 /* AppDelegate.swift */; };
+		18BD93CC2B0476DA00A683C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BD93CB2B0476DA00A683C6 /* SceneDelegate.swift */; };
+		18BD93CE2B0476DA00A683C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BD93CD2B0476DA00A683C6 /* ViewController.swift */; };
+		18BD93D12B0476DA00A683C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BD93CF2B0476DA00A683C6 /* Main.storyboard */; };
+		18BD93D32B0476DC00A683C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BD93D22B0476DC00A683C6 /* Assets.xcassets */; };
+		18BD93D62B0476DC00A683C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BD93D42B0476DC00A683C6 /* LaunchScreen.storyboard */; };
+		18BD93DE2B04783100A683C6 /* Spatial_Audio_414p_Loop.json in Resources */ = {isa = PBXBuildFile; fileRef = 18BD93DD2B04783100A683C6 /* Spatial_Audio_414p_Loop.json */; };
+		99ABDF94BDCCEA3070D73020 /* Pods_YYLottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6272DCC7F45097DF29DE7D41 /* Pods_YYLottie.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B6554D87927FC9AB484CA26 /* Pods-YYLottie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYLottie.debug.xcconfig"; path = "Target Support Files/Pods-YYLottie/Pods-YYLottie.debug.xcconfig"; sourceTree = "<group>"; };
+		18BD93C62B0476DA00A683C6 /* YYLottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYLottie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BD93C92B0476DA00A683C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18BD93CB2B0476DA00A683C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18BD93CD2B0476DA00A683C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18BD93D02B0476DA00A683C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18BD93D22B0476DC00A683C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18BD93D52B0476DC00A683C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18BD93D72B0476DC00A683C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BD93DD2B04783100A683C6 /* Spatial_Audio_414p_Loop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spatial_Audio_414p_Loop.json; sourceTree = "<group>"; };
+		6272DCC7F45097DF29DE7D41 /* Pods_YYLottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYLottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B26F4C1CAD0579FE27EB90 /* Pods-YYLottie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYLottie.release.xcconfig"; path = "Target Support Files/Pods-YYLottie/Pods-YYLottie.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18BD93C32B0476DA00A683C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99ABDF94BDCCEA3070D73020 /* Pods_YYLottie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18BD93BD2B0476DA00A683C6 = {
+			isa = PBXGroup;
+			children = (
+				18BD93DD2B04783100A683C6 /* Spatial_Audio_414p_Loop.json */,
+				18BD93C82B0476DA00A683C6 /* YYLottie */,
+				18BD93C72B0476DA00A683C6 /* Products */,
+				FDA67A2C4E696EA2C72101A2 /* Pods */,
+				19B3C97D78DE6247A15F3FE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18BD93C72B0476DA00A683C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18BD93C62B0476DA00A683C6 /* YYLottie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18BD93C82B0476DA00A683C6 /* YYLottie */ = {
+			isa = PBXGroup;
+			children = (
+				18BD93C92B0476DA00A683C6 /* AppDelegate.swift */,
+				18BD93CB2B0476DA00A683C6 /* SceneDelegate.swift */,
+				18BD93CD2B0476DA00A683C6 /* ViewController.swift */,
+				18BD93CF2B0476DA00A683C6 /* Main.storyboard */,
+				18BD93D22B0476DC00A683C6 /* Assets.xcassets */,
+				18BD93D42B0476DC00A683C6 /* LaunchScreen.storyboard */,
+				18BD93D72B0476DC00A683C6 /* Info.plist */,
+			);
+			path = YYLottie;
+			sourceTree = "<group>";
+		};
+		19B3C97D78DE6247A15F3FE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6272DCC7F45097DF29DE7D41 /* Pods_YYLottie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDA67A2C4E696EA2C72101A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B6554D87927FC9AB484CA26 /* Pods-YYLottie.debug.xcconfig */,
+				B8B26F4C1CAD0579FE27EB90 /* Pods-YYLottie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18BD93C52B0476DA00A683C6 /* YYLottie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BD93DA2B0476DC00A683C6 /* Build configuration list for PBXNativeTarget "YYLottie" */;
+			buildPhases = (
+				A36DE96E9EDACA42C32C7959 /* [CP] Check Pods Manifest.lock */,
+				18BD93C22B0476DA00A683C6 /* Sources */,
+				18BD93C32B0476DA00A683C6 /* Frameworks */,
+				18BD93C42B0476DA00A683C6 /* Resources */,
+				82C66B0802E74F4BC49E6780 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYLottie;
+			productName = YYLottie;
+			productReference = 18BD93C62B0476DA00A683C6 /* YYLottie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18BD93BE2B0476DA00A683C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					18BD93C52B0476DA00A683C6 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 18BD93C12B0476DA00A683C6 /* Build configuration list for PBXProject "YYLottie" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18BD93BD2B0476DA00A683C6;
+			productRefGroup = 18BD93C72B0476DA00A683C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18BD93C52B0476DA00A683C6 /* YYLottie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18BD93C42B0476DA00A683C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BD93DE2B04783100A683C6 /* Spatial_Audio_414p_Loop.json in Resources */,
+				18BD93D62B0476DC00A683C6 /* LaunchScreen.storyboard in Resources */,
+				18BD93D32B0476DC00A683C6 /* Assets.xcassets in Resources */,
+				18BD93D12B0476DA00A683C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82C66B0802E74F4BC49E6780 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YYLottie/Pods-YYLottie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YYLottie/Pods-YYLottie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YYLottie/Pods-YYLottie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A36DE96E9EDACA42C32C7959 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YYLottie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18BD93C22B0476DA00A683C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BD93CE2B0476DA00A683C6 /* ViewController.swift in Sources */,
+				18BD93CA2B0476DA00A683C6 /* AppDelegate.swift in Sources */,
+				18BD93CC2B0476DA00A683C6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18BD93CF2B0476DA00A683C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18BD93D02B0476DA00A683C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18BD93D42B0476DC00A683C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18BD93D52B0476DC00A683C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18BD93D82B0476DC00A683C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18BD93D92B0476DC00A683C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18BD93DB2B0476DC00A683C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B6554D87927FC9AB484CA26 /* Pods-YYLottie.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TQG57X94B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YYLottie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yy.YYLottie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18BD93DC2B0476DC00A683C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B26F4C1CAD0579FE27EB90 /* Pods-YYLottie.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TQG57X94B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YYLottie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yy.YYLottie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18BD93C12B0476DA00A683C6 /* Build configuration list for PBXProject "YYLottie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BD93D82B0476DC00A683C6 /* Debug */,
+				18BD93D92B0476DC00A683C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BD93DA2B0476DC00A683C6 /* Build configuration list for PBXNativeTarget "YYLottie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BD93DB2B0476DC00A683C6 /* Debug */,
+				18BD93DC2B0476DC00A683C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18BD93BE2B0476DA00A683C6 /* Project object */;
+}

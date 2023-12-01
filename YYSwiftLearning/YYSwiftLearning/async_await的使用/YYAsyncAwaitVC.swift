@@ -27,11 +27,6 @@ class YYAsyncAwaitVC : UIViewController {
         debugPrint("sleep seconds: ===== 0 ")
     }
     
-    deinit {
-//        if let aTask = aTask as? Task<<#Success: Sendable#>, <#Failure: Error#>> {
-//            aTask.cancel()
-//        }
-    }
 
     @available(*, renamed: "testAsyncAwait()")
     func testAsyncAwait(callback: @escaping (Int) -> Void) {

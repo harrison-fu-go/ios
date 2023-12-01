@@ -86,6 +86,11 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func gotoMetaType(_ sender: AnyObject) {
+        let vc = MetaTypeVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func setupLongpress() {
         guard let longpressBtn = longpressBtn else { return }
         longpressBtn.addTarget(self, action: #selector(onLongPress(_:)), for: .touchUpInside)

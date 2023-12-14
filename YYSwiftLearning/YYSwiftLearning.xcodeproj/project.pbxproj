@@ -21,6 +21,8 @@
 		1843AF7429924CC5009DC271 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1843AF7329924CC5009DC271 /* Shader.metal */; };
 		1854AB3F2A66481600C6767B /* YYBezierPathAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854AB3E2A66481600C6767B /* YYBezierPathAnimationVC.swift */; };
 		18AFFB122B1883E90087613D /* MetaTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFFB112B1883E90087613D /* MetaTypeVC.swift */; };
+		18AFFB282B29BC8E0087613D /* logo_white 1.svg in Resources */ = {isa = PBXBuildFile; fileRef = 18AFFB272B29BC8E0087613D /* logo_white 1.svg */; };
+		18AFFB2D2B2AB2710087613D /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFFB2C2B2AB2710087613D /* SVGView.swift */; };
 		328A638926D77401002424B0 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A638826D77401002424B0 /* House.swift */; };
 		329D300A26D89976008277C3 /* SwiftPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329D300926D89976008277C3 /* SwiftPointer.swift */; };
 		32A1ABE726D621D30011B11D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A1ABE626D621D30011B11D /* AppDelegate.swift */; };
@@ -70,6 +72,8 @@
 		1843AF7329924CC5009DC271 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 		1854AB3E2A66481600C6767B /* YYBezierPathAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYBezierPathAnimationVC.swift; sourceTree = "<group>"; };
 		18AFFB112B1883E90087613D /* MetaTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaTypeVC.swift; sourceTree = "<group>"; };
+		18AFFB272B29BC8E0087613D /* logo_white 1.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "logo_white 1.svg"; sourceTree = "<group>"; };
+		18AFFB2C2B2AB2710087613D /* SVGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGView.swift; sourceTree = "<group>"; };
 		328A638826D77401002424B0 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		329D300926D89976008277C3 /* SwiftPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPointer.swift; sourceTree = "<group>"; };
 		32A1ABE326D621D30011B11D /* YYSwiftLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYSwiftLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +210,14 @@
 			path = "swift元类型";
 			sourceTree = "<group>";
 		};
+		18AFFB2B2B2AB2550087613D /* SVGView的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				18AFFB2C2B2AB2710087613D /* SVGView.swift */,
+			);
+			path = "SVGView的使用";
+			sourceTree = "<group>";
+		};
 		329D300826D89947008277C3 /* Swift指针研究 */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +251,8 @@
 		32A1ABE526D621D30011B11D /* YYSwiftLearning */ = {
 			isa = PBXGroup;
 			children = (
+				18AFFB2B2B2AB2550087613D /* SVGView的使用 */,
+				18AFFB272B29BC8E0087613D /* logo_white 1.svg */,
 				18AFFB102B1882E80087613D /* swift元类型 */,
 				1816E4992AD63D0900FAB752 /* async_await的使用 */,
 				180917712AD2648F00A761B4 /* cocopods */,
@@ -410,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AFFB282B29BC8E0087613D /* logo_white 1.svg in Resources */,
 				32A1ABF326D621D40011B11D /* LaunchScreen.storyboard in Resources */,
 				32A1ABF026D621D40011B11D /* Assets.xcassets in Resources */,
 				32A1ABEE26D621D30011B11D /* Main.storyboard in Resources */,
@@ -555,6 +570,7 @@
 				329D300A26D89976008277C3 /* SwiftPointer.swift in Sources */,
 				328A638926D77401002424B0 /* House.swift in Sources */,
 				181911FC2AB2A781003FDBFA /* YYCsvCenter.swift in Sources */,
+				18AFFB2D2B2AB2710087613D /* SVGView.swift in Sources */,
 				32A1ABE926D621D30011B11D /* SceneDelegate.swift in Sources */,
 				1828879D2A49423000E0AC9A /* CollectionCardVC.swift in Sources */,
 				181911FE2AB2A870003FDBFA /* YYCSVVC.swift in Sources */,

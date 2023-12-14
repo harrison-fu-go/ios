@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Macaw
 class ViewController: UIViewController {
     
     @IBOutlet var longpressBtn: UIButton?
@@ -37,6 +38,11 @@ class ViewController: UIViewController {
         let iii = ["00": 10, "11":false] as [String : Any]
         let val = iii["00"] as? Int ?? 99
         print("===========???  \(val)")
+        
+        let svgView = NTSVGImageView("logo_white 1",frame: CGRect(x: 200, y: 300, width: 108, height: 36))
+        self.view.addSubview(svgView)
+        svgView.updateFill(color: .blue.alpha(0.5))
+
     }
     
     

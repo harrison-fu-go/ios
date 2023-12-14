@@ -6,6 +6,7 @@ target 'YYSwiftLearning' do
   use_frameworks!
   pod 'SnapKit', '~> 5.0.0'
   pod 'CSV.swift', '~> 2.4.3'
+  pod "Macaw", "0.9.10"
 
   target 'YYSwiftLearningTests' do
     inherit! :search_paths

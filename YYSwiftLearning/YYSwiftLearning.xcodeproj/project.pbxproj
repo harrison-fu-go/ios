@@ -251,8 +251,8 @@
 		32A1ABE526D621D30011B11D /* YYSwiftLearning */ = {
 			isa = PBXGroup;
 			children = (
-				18AFFB2B2B2AB2550087613D /* SVGView的使用 */,
 				18AFFB272B29BC8E0087613D /* logo_white 1.svg */,
+				18AFFB2B2B2AB2550087613D /* SVGView的使用 */,
 				18AFFB102B1882E80087613D /* swift元类型 */,
 				1816E4992AD63D0900FAB752 /* async_await的使用 */,
 				180917712AD2648F00A761B4 /* cocopods */,

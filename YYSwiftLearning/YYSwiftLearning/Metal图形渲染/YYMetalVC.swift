@@ -36,10 +36,10 @@ class YYMetalView: MTKView {
     
     override func draw(_ rect: CGRect) {
         device = MTLCreateSystemDefaultDevice()
-        if let drawable = currentDrawable, let rpd = currentRenderPassDescriptor {
-            rpd.colorAttachments[0].clearColor = MTLClearColor(red: 0, green: 0.5, blue: 0.5, alpha: 1.0)
+        if let drawable = currentDrawable, let rpd = currentRenderPassDescriptor, let device = self.device {
+            rpd.colorAttachments[0].clearColor = MTLClearColor(red: 1.0, green: 0.5, blue: 0.5, alpha: 1.0)
             rpd.colorAttachments[0].loadAction = .clear
-            let commandBuffer = device!.makeCommandQueue()?.makeCommandBuffer()
+            let commandBuffer = device.makeCommandQueue()?.makeCommandBuffer()
             let commandEncoder = commandBuffer?.makeRenderCommandEncoder(descriptor: rpd)
             commandEncoder?.endEncoding()
             commandBuffer?.present(drawable)

@@ -13,6 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, strong)NSString *name;
 
+- (int)sayHello:(NSString *)message;
+
++ (void)sayHi:(NSString *)hi;
+
+- (int)instanceSayHello:(NSString *)message;
++ (void)classSayHi:(NSString *)hi;
+
 @end
 
 NS_ASSUME_NONNULL_END

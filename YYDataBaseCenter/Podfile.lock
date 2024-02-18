@@ -1,0 +1,29 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - Realm (10.27.0):
+    - Realm/Headers (= 10.27.0)
+  - Realm/Headers (10.27.0)
+  - RealmSwift (10.27.0):
+    - Realm (= 10.27.0)
+
+DEPENDENCIES:
+  - FMDB
+  - Realm (~> 10.27.0)
+  - RealmSwift (~> 10.27.0)
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Realm: 9ca328bd7e700cc19703799785e37f77d1a130f2
+  RealmSwift: 271de77b09a73c5e46ee3252283878153bd5d288
+
+PODFILE CHECKSUM: a405b7e61a9c0b07870253eae9fae3777ce51372
+
+COCOAPODS: 1.12.0

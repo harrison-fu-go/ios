@@ -19,5 +19,4 @@
  object_getClass(p) //获取一个对象的isa指向
  class_isMetaClass（p）//判断一个对象是否是元类。
  
-
  **/

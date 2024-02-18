@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  YYTextEvents
+
+  Created by HarrisonFu on 2024/1/23.
+  
+*/
+"user_agreement" = "اتفاقية المستخدم";
+"permission_usage_instructions" = "2إشعار الأذونات";
+"personal_Information_Instructions" = "إشعار المعلومات الشخصية الحساسة3";
+"user_china_privacy_hint" = "يتطلب Nothing X استخدام البلوتوث والشبكة والصور ومقاطع الفيديو والكاميرا لتزويدك بإدارة جهاز البلوتوث، والصور الرمزية المخصصة والقدرة على تنزيل البرنامج الثابت وحفظه للحصول على التحديثات والخدمات الأخرى. انقر على «أوافق» إذا كنت توافق على ما ورد أعلاه و [%1$s] و [%2$s] و [%3$s] و [%4$s].";
+"privacy_notice_title" = "4إشعار الخصوصية";
+//
+//"user_china_privacy_hint" = "٤٥٥٣٤٥٣٥٣٥٣٥٣٣٥٣٤ [%1$s]ييي٧٩٤٥٧٣٩٥٤٧٩٣٤٥٣٩٥٣٤";

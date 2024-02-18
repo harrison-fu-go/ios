@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  YYTextEvents
+
+  Created by HarrisonFu on 2024/1/23.
+  
+*/
+"user_agreement" = "User Agreement";
+"permission_usage_instructions" = "Permissions Notice";
+"personal_Information_Instructions" = "Sensitive Personal Information Notice";
+"user_china_privacy_hint" = "Nothing X requires the use of Bluetooth, network, photos and videos and camera to provide you with Bluetooth device management, customised avatars and the ability to download and save the firmware for updates and other services. Tap \"Agree\" if you agree to the above  and [%1$s], [%2$s], [%3$s], and [%4$s].";
+"privacy_notice_title" = "Privacy Notice";

@@ -97,6 +97,11 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func gotoStringResearch(_ sender: AnyObject) {
+        let vc = StringResearchVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func setupLongpress() {
         guard let longpressBtn = longpressBtn else { return }
         longpressBtn.addTarget(self, action: #selector(onLongPress(_:)), for: .touchUpInside)

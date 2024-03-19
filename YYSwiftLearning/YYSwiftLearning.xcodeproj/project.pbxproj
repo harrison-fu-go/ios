@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		1843AF7229922A97009DC271 /* YYMetalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843AF7129922A97009DC271 /* YYMetalVC.swift */; };
 		1843AF7429924CC5009DC271 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1843AF7329924CC5009DC271 /* Shader.metal */; };
 		1854AB3F2A66481600C6767B /* YYBezierPathAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854AB3E2A66481600C6767B /* YYBezierPathAnimationVC.swift */; };
+		18A78FDA2B81FD5300691F1E /* StringResearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A78FD92B81FD5300691F1E /* StringResearchVC.swift */; };
 		18AFFB122B1883E90087613D /* MetaTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFFB112B1883E90087613D /* MetaTypeVC.swift */; };
 		18AFFB282B29BC8E0087613D /* logo_white 1.svg in Resources */ = {isa = PBXBuildFile; fileRef = 18AFFB272B29BC8E0087613D /* logo_white 1.svg */; };
 		18AFFB2D2B2AB2710087613D /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFFB2C2B2AB2710087613D /* SVGView.swift */; };
@@ -71,6 +72,7 @@
 		1843AF7129922A97009DC271 /* YYMetalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYMetalVC.swift; sourceTree = "<group>"; };
 		1843AF7329924CC5009DC271 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 		1854AB3E2A66481600C6767B /* YYBezierPathAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYBezierPathAnimationVC.swift; sourceTree = "<group>"; };
+		18A78FD92B81FD5300691F1E /* StringResearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringResearchVC.swift; sourceTree = "<group>"; };
 		18AFFB112B1883E90087613D /* MetaTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaTypeVC.swift; sourceTree = "<group>"; };
 		18AFFB272B29BC8E0087613D /* logo_white 1.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "logo_white 1.svg"; sourceTree = "<group>"; };
 		18AFFB2C2B2AB2710087613D /* SVGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGView.swift; sourceTree = "<group>"; };
@@ -202,6 +204,14 @@
 			path = "Metal图形渲染";
 			sourceTree = "<group>";
 		};
+		18A78FD82B81FD0100691F1E /* 字符串的探究 */ = {
+			isa = PBXGroup;
+			children = (
+				18A78FD92B81FD5300691F1E /* StringResearchVC.swift */,
+			);
+			path = "字符串的探究";
+			sourceTree = "<group>";
+		};
 		18AFFB102B1882E80087613D /* swift元类型 */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +273,7 @@
 				1843AF7029922A2D009DC271 /* Metal图形渲染 */,
 				32AFF41926E88DEC009022CF /* SwiftGCD研究 */,
 				329D300826D89947008277C3 /* Swift指针研究 */,
+				18A78FD82B81FD0100691F1E /* 字符串的探究 */,
 				32A1ABE626D621D30011B11D /* AppDelegate.swift */,
 				32A1ABE826D621D30011B11D /* SceneDelegate.swift */,
 				32A1ABEA26D621D30011B11D /* ViewController.swift */,
@@ -555,6 +566,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A78FDA2B81FD5300691F1E /* StringResearchVC.swift in Sources */,
 				1843AF7229922A97009DC271 /* YYMetalVC.swift in Sources */,
 				32AFF41B26E88E0D009022CF /* GCD.swift in Sources */,
 				32A1ABEB26D621D30011B11D /* ViewController.swift in Sources */,

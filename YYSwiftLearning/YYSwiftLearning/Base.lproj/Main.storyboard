@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IV3-Re-Bdh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IV3-Re-Bdh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -122,6 +122,18 @@
                                     <action selector="gotoMetaType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZx-Pd-3va"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKq-2D-k1C">
+                                <rect key="frame" x="0.0" y="630" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ziw-XT-xDL"/>
+                                    <constraint firstAttribute="width" constant="200" id="zlW-ru-9SP"/>
+                                </constraints>
+                                <state key="normal" title="字符串的探究"/>
+                                <connections>
+                                    <action selector="gotoStringResearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WCF-IE-WHj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -152,10 +164,12 @@
                             <constraint firstItem="IrI-Cv-ArE" firstAttribute="top" secondItem="Uo0-3V-xjS" secondAttribute="bottom" constant="8" id="Xxg-KD-LXD"/>
                             <constraint firstItem="GPZ-tc-dJk" firstAttribute="width" secondItem="nl9-aw-sYy" secondAttribute="width" id="Yex-2c-Xet"/>
                             <constraint firstItem="p55-XL-SuK" firstAttribute="top" secondItem="GPZ-tc-dJk" secondAttribute="bottom" constant="8" id="b4N-Ug-cpo"/>
+                            <constraint firstItem="eKq-2D-k1C" firstAttribute="top" secondItem="E5a-WM-4EQ" secondAttribute="bottom" constant="18" id="bkF-6o-Z7b"/>
                             <constraint firstItem="3Wb-pe-rZq" firstAttribute="top" secondItem="IrI-Cv-ArE" secondAttribute="bottom" constant="8" symbolic="YES" id="dEq-xS-ooy"/>
                             <constraint firstItem="jaZ-NO-SUE" firstAttribute="centerX" secondItem="Uo0-3V-xjS" secondAttribute="centerX" id="ecU-pK-cnw"/>
                             <constraint firstItem="VAQ-kI-0IN" firstAttribute="top" secondItem="3Wb-pe-rZq" secondAttribute="bottom" constant="10" id="fW9-GG-PFV"/>
                             <constraint firstItem="IrI-Cv-ArE" firstAttribute="width" secondItem="Uo0-3V-xjS" secondAttribute="width" id="hs6-IX-r3B"/>
+                            <constraint firstItem="eKq-2D-k1C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mRM-la-ObE"/>
                             <constraint firstItem="GPZ-tc-dJk" firstAttribute="top" secondItem="nl9-aw-sYy" secondAttribute="bottom" constant="8" id="qJS-KS-kYw"/>
                             <constraint firstItem="xpB-Di-aIi" firstAttribute="top" secondItem="p55-XL-SuK" secondAttribute="bottom" constant="8" id="v8X-Ta-s2d"/>
                             <constraint firstItem="nl9-aw-sYy" firstAttribute="centerX" secondItem="Uo0-3V-xjS" secondAttribute="centerX" id="vrK-Vb-CXF"/>

@@ -15,7 +15,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    Byte bytes[] = {0xc8, 0xdd , 0x6f, 0x00};
+//    NSData *data = [NSData dataWithBytes:bytes length: 4];
+    NSInteger length = [self byteToInt:bytes];
+    NSLog(@"====== %ld", (long)length);
 }
 
 
@@ -28,5 +31,12 @@
     [swift2 hello];
 }
 
+- (NSInteger)byteToInt:(uint8_t *)data{
+    NSInteger value = (data[0] & 0xff)
+    | ((data[1] & 0xff) << 8)
+    | ((data[2] & 0xff) << 16)
+    | ((data[3] & 0xff) << 24);
+    return value;
+}
 
 @end

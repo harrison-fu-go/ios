@@ -114,7 +114,6 @@ class BLECenter: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, BLETa
                 }
                 self.delegates.do { $0.onScanStateDidUpdate?(isScan: false) }
                 self.cancelScanTimer()
-                
             }
         }
     }
@@ -478,7 +477,6 @@ class BLECenter: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, BLETa
                 index += 1
             }
         }
-        
     }
     
     func peripheralIsReady(toSendWriteWithoutResponse peripheral: CBPeripheral) {

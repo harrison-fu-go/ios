@@ -115,16 +115,16 @@ class BLETasksCenter {
                                              characteristic:task!.characteristic!,
                                              type:task!.writeReadType,
                                              callback: { (val:[String : Any]) in     // state: Bool, message: String
-                                                let state = val["state"] as! BLETaskState
-                                                if task!.writeReadType == .withoutResponse || state == .fail {
-                                                    task?.taskCompleted(response: val)
-                                                    self.syncWaitingTask = nil
-                                                    DispatchQueue.global().asyncAfter(deadline: .now() + 0.1, execute: {
-                                                        self.isTasking = false
-                                                        self.execute() //next task.
-                                                    })
-                                                }
-                                             })
+                        let state = val["state"] as! BLETaskState
+                        if task!.writeReadType == .withoutResponse || state == .fail {
+                            task?.taskCompleted(response: val)
+                            self.syncWaitingTask = nil
+                            DispatchQueue.global().asyncAfter(deadline: .now() + 0.1, execute: {
+                                self.isTasking = false
+                                self.execute() //next task.
+                            })
+                        }
+                    })
                 } else {
                     task?.taskCompleted(response: ["state":BLETaskState.fail, "message":"Not set the ble center."])
                     self.syncWaitingTask = nil

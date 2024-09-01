@@ -13,7 +13,6 @@ class BLEDevice: NSObject {
         self.uuid = uuid
         self.blePeripheral = peripheral
     }
-    
     var name: String?
     var uuid: String?
     var mac: String?

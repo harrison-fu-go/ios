@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "VideoDataMgr.h"
+#import "YYSHA256.h"
 @interface ViewController ()
 @property(nonatomic, strong)NSString *downloadPath;
 @property(nonatomic, strong)VideoDataMgr *videoMgr;
@@ -17,55 +18,67 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.downloadPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES)lastObject] stringByAppendingPathComponent:@"/downloads"];
-    BOOL isDirectory;
-    if (![[NSFileManager defaultManager] fileExistsAtPath:self.downloadPath isDirectory:&isDirectory]) {
-        NSURL *fileUrl = [NSURL fileURLWithPath:self.downloadPath];
-        BOOL isSuccess = [[NSFileManager defaultManager] createDirectoryAtURL:fileUrl
-                                                  withIntermediateDirectories:YES
-                                                                   attributes:nil error:nil];
-        if (isSuccess) {
-            NSLog(@"目录创建成功");
-        } else {
-            NSLog(@"目录创建失败");
-        }
-    }
-//    [self saveDemoFile];
-//    [self putToPhotoAlbum];
     
-//    [self saveDemoMp4File];
-//    [self putMp4ToPhotoAlbum];
+    NSData *data = [NSData dataWithBytes:@[0xff, 0xfe] length:2];
+    [YYSHA256 sha256:];
     
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        self.videoMgr = [[VideoDataMgr alloc] initEnd:^(BOOL success, NSString *mess) {
-            NSLog(@"=====end: %d === %@", success, mess);
-        } progress:^(double progress) {
-            NSLog(@"=====progress: %f", progress);
-        }];
-        NSString *fileName = @"sample-15s.mp4";
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
-        NSData *data = [NSData dataWithContentsOfFile:filePath];
-        [self.videoMgr start:fileName size:data.length];
-        BOOL isFinished = NO;
-        uint32_t intervalLen = 100000;
-        uint32_t loc = 0;
-        uint32_t totoalLen = (uint32_t)data.length;
-        while (!isFinished) {
-            uint32_t sendLength = intervalLen;
-            if (loc + intervalLen > totoalLen-1) {
-                sendLength = totoalLen - loc;
-            }
-            NSRange sendRange = NSMakeRange(loc, sendLength);
-            NSData *sendData = [data subdataWithRange:sendRange];
-            [self.videoMgr receiveData:sendData];
-            [NSThread sleepForTimeInterval:0.01];
-            loc = loc + sendLength;
-            if (loc == totoalLen) { //end.
-                isFinished = YES;
-                NSLog(@"=====end: %d === %d ==== %d", loc, (totoalLen - loc), totoalLen);
-            }
-        }
-    });
+    
+    
+    //c 清空结构体
+//    gmanLibWDPAlarmStruct alarm;
+//    memset(&alarm, 0, sizeof(gmanLibWDPAlarmStruct));
+//    NSLog(@"======= %d", alarm.alarmEn);
+//    
+//    
+//    self.downloadPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES)lastObject] stringByAppendingPathComponent:@"/downloads"];
+//    BOOL isDirectory;
+//    if (![[NSFileManager defaultManager] fileExistsAtPath:self.downloadPath isDirectory:&isDirectory]) {
+//        NSURL *fileUrl = [NSURL fileURLWithPath:self.downloadPath];
+//        BOOL isSuccess = [[NSFileManager defaultManager] createDirectoryAtURL:fileUrl
+//                                                  withIntermediateDirectories:YES
+//                                                                   attributes:nil error:nil];
+//        if (isSuccess) {
+//            NSLog(@"目录创建成功");
+//        } else {
+//            NSLog(@"目录创建失败");
+//        }
+//    }
+////    [self saveDemoFile];
+////    [self putToPhotoAlbum];
+//    
+////    [self saveDemoMp4File];
+////    [self putMp4ToPhotoAlbum];
+//    
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        self.videoMgr = [[VideoDataMgr alloc] initEnd:^(BOOL success, NSString *mess) {
+//            NSLog(@"=====end: %d === %@", success, mess);
+//        } progress:^(double progress) {
+//            NSLog(@"=====progress: %f", progress);
+//        }];
+//        NSString *fileName = @"sample-15s.mp4";
+//        NSString *filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
+//        NSData *data = [NSData dataWithContentsOfFile:filePath];
+//        [self.videoMgr start:fileName size:data.length];
+//        BOOL isFinished = NO;
+//        uint32_t intervalLen = 100000;
+//        uint32_t loc = 0;
+//        uint32_t totoalLen = (uint32_t)data.length;
+//        while (!isFinished) {
+//            uint32_t sendLength = intervalLen;
+//            if (loc + intervalLen > totoalLen-1) {
+//                sendLength = totoalLen - loc;
+//            }
+//            NSRange sendRange = NSMakeRange(loc, sendLength);
+//            NSData *sendData = [data subdataWithRange:sendRange];
+//            [self.videoMgr receiveData:sendData];
+//            [NSThread sleepForTimeInterval:0.01];
+//            loc = loc + sendLength;
+//            if (loc == totoalLen) { //end.
+//                isFinished = YES;
+//                NSLog(@"=====end: %d === %d ==== %d", loc, (totoalLen - loc), totoalLen);
+//            }
+//        }
+//    });
     
     
 }

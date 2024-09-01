@@ -74,6 +74,4 @@ class GCD: NSObject {
             print("=====group done, \(Date().description)")
         }
     }
-    
-    
 }

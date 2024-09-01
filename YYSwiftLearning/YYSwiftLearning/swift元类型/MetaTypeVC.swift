@@ -21,17 +21,18 @@ class MetaTypeVC: UIViewController {
      4. Any 其实是所有的元类
      
      //简洁的概要
-     1 类型.Type = 值.self
-     2 协议.Type = 实现类.self
-     3 协议.Protocol = 协议.self
+     1 类型.Type = 值.self ---demo: let type1:Int.Type = type(of: 10)
+     2 协议.Type = 实现类.self ---demo: //let pType: ContentCell.Type = IntCell.self
+     3 协议.Protocol = 协议.self --- demo: //let pPro: ContentCell.Protocol = ContentCell.self
      4 type(of:) 运行时类型，self 编译器识别的类型
      
      */
+    /*感想: 把元类型的值，当成是一个实例对象值。 为： 类型.self, 或者type(of:value), 元类型 类型.Type 为一个类去看待， 会好理解。 */
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-//        let type: Int.Type = Int.self
-        
         let vc = MetaTypeVC()
         let metatype: MetaTypeVC.Type = type(of: vc)
         let values:[Any] = [Int.self, String.self, MetaTypeVC.self, metatype, type(of: 0.2)]
@@ -41,8 +42,11 @@ class MetaTypeVC: UIViewController {
             print("==== is same Int.Type")
         }
         
-        print("==== \(values)")
+        //let type1:Int.Type = type(of: 10)
+        //print("====type1: \(type1)") //---> Int
         
+        print("==== \(values)")
+       
 //        let anyClass:[AnyClass] = [type(of: vc)]
 //        let anyClass:[Any] = [AnyClass.self]
         
@@ -78,8 +82,6 @@ class MetaTypeVC: UIViewController {
     }
     
 }
-
-
 
 protocol ContentCell { }
 

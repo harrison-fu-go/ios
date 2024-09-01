@@ -7,6 +7,7 @@
 
 import UIKit
 import Macaw
+
 class ViewController: UIViewController {
     
     @IBOutlet var longpressBtn: UIButton?
@@ -42,7 +43,18 @@ class ViewController: UIViewController {
         let svgView = NTSVGImageView("logo_white 1",frame: CGRect(x: 200, y: 300, width: 108, height: 36))
         self.view.addSubview(svgView)
         svgView.updateFill(color: .blue.alpha(0.5))
-
+        
+        let array = ["a", "b", "c"]
+        let temparray = ["a","b","c","d"]
+        let pass = temparray.allSatisfy { temp -> Bool in
+            return array.contains(temp)
+        }
+        print("===========???  \(pass)")
+        //
+        print("component:  \(("xxx.log" as NSString).deletingPathExtension)")
+        
+        let paddingStr = String(format: "%03d", 23)
+        print("==========paddingStr: \(paddingStr)")
     }
     
     
@@ -98,6 +110,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func gotoStringResearch(_ sender: AnyObject) {
+        let vc = StringResearchVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func gotoLock(_ sender: AnyObject) {
         let vc = StringResearchVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }

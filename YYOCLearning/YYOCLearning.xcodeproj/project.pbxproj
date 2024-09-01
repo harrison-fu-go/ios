@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187C7BED2BD10E4200CB2F4D /* YYSHA256.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C7BEC2BD10E4200CB2F4D /* YYSHA256.m */; };
 		188EDFB82BC2739E003892FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EDFB72BC2739E003892FD /* AppDelegate.m */; };
 		188EDFBB2BC2739E003892FD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EDFBA2BC2739E003892FD /* SceneDelegate.m */; };
 		188EDFBE2BC2739E003892FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EDFBD2BC2739E003892FD /* ViewController.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187C7BEB2BD10E4200CB2F4D /* YYSHA256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSHA256.h; sourceTree = "<group>"; };
+		187C7BEC2BD10E4200CB2F4D /* YYSHA256.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSHA256.m; sourceTree = "<group>"; };
 		188EDFB32BC2739E003892FD /* YYOCLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYOCLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		188EDFB62BC2739E003892FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		188EDFB72BC2739E003892FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		187C7BEA2BD10E2600CB2F4D /* sha256签名 */ = {
+			isa = PBXGroup;
+			children = (
+				187C7BEB2BD10E4200CB2F4D /* YYSHA256.h */,
+				187C7BEC2BD10E4200CB2F4D /* YYSHA256.m */,
+			);
+			path = "sha256签名";
+			sourceTree = "<group>";
+		};
 		188EDFAA2BC2739E003892FD = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +80,7 @@
 		188EDFB52BC2739E003892FD /* YYOCLearning */ = {
 			isa = PBXGroup;
 			children = (
+				187C7BEA2BD10E2600CB2F4D /* sha256签名 */,
 				188EDFD32BC2864E003892FD /* 视频流保存 */,
 				188EDFD12BC27EC3003892FD /* sample-15s.mp4 */,
 				188EDFCF2BC2777A003892FD /* system.jpg */,
@@ -169,6 +182,7 @@
 			files = (
 				188EDFBE2BC2739E003892FD /* ViewController.m in Sources */,
 				188EDFB82BC2739E003892FD /* AppDelegate.m in Sources */,
+				187C7BED2BD10E4200CB2F4D /* YYSHA256.m in Sources */,
 				188EDFC92BC273A0003892FD /* main.m in Sources */,
 				188EDFD62BC28696003892FD /* VideoDataMgr.m in Sources */,
 				188EDFBB2BC2739E003892FD /* SceneDelegate.m in Sources */,

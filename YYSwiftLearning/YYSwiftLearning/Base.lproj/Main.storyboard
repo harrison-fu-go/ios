@@ -134,6 +134,18 @@
                                     <action selector="gotoStringResearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WCF-IE-WHj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWo-Pj-tph">
+                                <rect key="frame" x="0.0" y="688" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="OaT-LO-yAb"/>
+                                    <constraint firstAttribute="height" constant="40" id="mak-OE-zsB"/>
+                                </constraints>
+                                <state key="normal" title="各种锁的使用"/>
+                                <connections>
+                                    <action selector="gotoLock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vER-4d-yNq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -167,10 +179,12 @@
                             <constraint firstItem="eKq-2D-k1C" firstAttribute="top" secondItem="E5a-WM-4EQ" secondAttribute="bottom" constant="18" id="bkF-6o-Z7b"/>
                             <constraint firstItem="3Wb-pe-rZq" firstAttribute="top" secondItem="IrI-Cv-ArE" secondAttribute="bottom" constant="8" symbolic="YES" id="dEq-xS-ooy"/>
                             <constraint firstItem="jaZ-NO-SUE" firstAttribute="centerX" secondItem="Uo0-3V-xjS" secondAttribute="centerX" id="ecU-pK-cnw"/>
+                            <constraint firstItem="RWo-Pj-tph" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f1O-Ik-G2v"/>
                             <constraint firstItem="VAQ-kI-0IN" firstAttribute="top" secondItem="3Wb-pe-rZq" secondAttribute="bottom" constant="10" id="fW9-GG-PFV"/>
                             <constraint firstItem="IrI-Cv-ArE" firstAttribute="width" secondItem="Uo0-3V-xjS" secondAttribute="width" id="hs6-IX-r3B"/>
                             <constraint firstItem="eKq-2D-k1C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mRM-la-ObE"/>
                             <constraint firstItem="GPZ-tc-dJk" firstAttribute="top" secondItem="nl9-aw-sYy" secondAttribute="bottom" constant="8" id="qJS-KS-kYw"/>
+                            <constraint firstItem="RWo-Pj-tph" firstAttribute="top" secondItem="eKq-2D-k1C" secondAttribute="bottom" constant="18" id="qet-Cd-UjC"/>
                             <constraint firstItem="xpB-Di-aIi" firstAttribute="top" secondItem="p55-XL-SuK" secondAttribute="bottom" constant="8" id="v8X-Ta-s2d"/>
                             <constraint firstItem="nl9-aw-sYy" firstAttribute="centerX" secondItem="Uo0-3V-xjS" secondAttribute="centerX" id="vrK-Vb-CXF"/>
                             <constraint firstItem="3Wb-pe-rZq" firstAttribute="height" secondItem="Uo0-3V-xjS" secondAttribute="height" id="xMj-Ik-Yha"/>

@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030B4FE92CC737470018AA16 /* YYAppIntelligenceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030B4FE82CC737470018AA16 /* YYAppIntelligenceApp.swift */; };
+		030B4FEB2CC737470018AA16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030B4FEA2CC737470018AA16 /* ContentView.swift */; };
+		030B4FED2CC7374A0018AA16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030B4FEC2CC7374A0018AA16 /* Assets.xcassets */; };
+		030B4FF12CC7374A0018AA16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030B4FF02CC7374A0018AA16 /* Preview Assets.xcassets */; };
+		030B4FF82CC73BDF0018AA16 /* SiriSTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030B4FF72CC73BDF0018AA16 /* SiriSTT.swift */; };
+		03ADBF422CC89330000720E7 /* YYTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADBF412CC89330000720E7 /* YYTimer.swift */; };
+		03ADBF442CC8CC46000720E7 /* zh-CN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03ADBF432CC8CC46000720E7 /* zh-CN.mp3 */; };
+		03ADBF462CC8DA79000720E7 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADBF452CC8DA79000720E7 /* Log.swift */; };
+		7394B584A73B068B905FAC62 /* Pods_YYAppIntelligence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0443C7C7FD94F1245C450283 /* Pods_YYAppIntelligence.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		030B4FE52CC737470018AA16 /* YYAppIntelligence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYAppIntelligence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		030B4FE82CC737470018AA16 /* YYAppIntelligenceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAppIntelligenceApp.swift; sourceTree = "<group>"; };
+		030B4FEA2CC737470018AA16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		030B4FEC2CC7374A0018AA16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		030B4FEE2CC7374A0018AA16 /* YYAppIntelligence.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YYAppIntelligence.entitlements; sourceTree = "<group>"; };
+		030B4FF02CC7374A0018AA16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		030B4FF72CC73BDF0018AA16 /* SiriSTT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSTT.swift; sourceTree = "<group>"; };
+		03ADBF412CC89330000720E7 /* YYTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYTimer.swift; sourceTree = "<group>"; };
+		03ADBF432CC8CC46000720E7 /* zh-CN.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "zh-CN.mp3"; sourceTree = "<group>"; };
+		03ADBF452CC8DA79000720E7 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		0443C7C7FD94F1245C450283 /* Pods_YYAppIntelligence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYAppIntelligence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83088DB54BA407D7F9E42BB8 /* Pods-YYAppIntelligence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYAppIntelligence.debug.xcconfig"; path = "Target Support Files/Pods-YYAppIntelligence/Pods-YYAppIntelligence.debug.xcconfig"; sourceTree = "<group>"; };
+		EA4D17B6FF2ABFCA047E64F7 /* Pods-YYAppIntelligence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYAppIntelligence.release.xcconfig"; path = "Target Support Files/Pods-YYAppIntelligence/Pods-YYAppIntelligence.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		030B4FE22CC737470018AA16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7394B584A73B068B905FAC62 /* Pods_YYAppIntelligence.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		030B4FDC2CC737470018AA16 = {
+			isa = PBXGroup;
+			children = (
+				030B4FE72CC737470018AA16 /* YYAppIntelligence */,
+				030B4FE62CC737470018AA16 /* Products */,
+				78BCCBBA3D3A430541B92582 /* Pods */,
+				102195B8E7A30CF928691C2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		030B4FE62CC737470018AA16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				030B4FE52CC737470018AA16 /* YYAppIntelligence.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		030B4FE72CC737470018AA16 /* YYAppIntelligence */ = {
+			isa = PBXGroup;
+			children = (
+				03ADBF432CC8CC46000720E7 /* zh-CN.mp3 */,
+				030B4FE82CC737470018AA16 /* YYAppIntelligenceApp.swift */,
+				030B4FEA2CC737470018AA16 /* ContentView.swift */,
+				030B4FEC2CC7374A0018AA16 /* Assets.xcassets */,
+				030B4FEE2CC7374A0018AA16 /* YYAppIntelligence.entitlements */,
+				030B4FEF2CC7374A0018AA16 /* Preview Content */,
+				030B4FF72CC73BDF0018AA16 /* SiriSTT.swift */,
+				03ADBF412CC89330000720E7 /* YYTimer.swift */,
+				03ADBF452CC8DA79000720E7 /* Log.swift */,
+			);
+			path = YYAppIntelligence;
+			sourceTree = "<group>";
+		};
+		030B4FEF2CC7374A0018AA16 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				030B4FF02CC7374A0018AA16 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		102195B8E7A30CF928691C2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0443C7C7FD94F1245C450283 /* Pods_YYAppIntelligence.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78BCCBBA3D3A430541B92582 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83088DB54BA407D7F9E42BB8 /* Pods-YYAppIntelligence.debug.xcconfig */,
+				EA4D17B6FF2ABFCA047E64F7 /* Pods-YYAppIntelligence.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		030B4FE42CC737470018AA16 /* YYAppIntelligence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 030B4FF42CC7374A0018AA16 /* Build configuration list for PBXNativeTarget "YYAppIntelligence" */;
+			buildPhases = (
+				4D71478C5FCDF1011483F297 /* [CP] Check Pods Manifest.lock */,
+				030B4FE12CC737470018AA16 /* Sources */,
+				030B4FE22CC737470018AA16 /* Frameworks */,
+				030B4FE32CC737470018AA16 /* Resources */,
+				4379BCAFB0B1B7906193ECB8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYAppIntelligence;
+			productName = YYAppIntelligence;
+			productReference = 030B4FE52CC737470018AA16 /* YYAppIntelligence.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		030B4FDD2CC737470018AA16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					030B4FE42CC737470018AA16 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 030B4FE02CC737470018AA16 /* Build configuration list for PBXProject "YYAppIntelligence" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 030B4FDC2CC737470018AA16;
+			productRefGroup = 030B4FE62CC737470018AA16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				030B4FE42CC737470018AA16 /* YYAppIntelligence */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		030B4FE32CC737470018AA16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030B4FF12CC7374A0018AA16 /* Preview Assets.xcassets in Resources */,
+				03ADBF442CC8CC46000720E7 /* zh-CN.mp3 in Resources */,
+				030B4FED2CC7374A0018AA16 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4379BCAFB0B1B7906193ECB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YYAppIntelligence/Pods-YYAppIntelligence-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YYAppIntelligence/Pods-YYAppIntelligence-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YYAppIntelligence/Pods-YYAppIntelligence-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D71478C5FCDF1011483F297 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YYAppIntelligence-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		030B4FE12CC737470018AA16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030B4FEB2CC737470018AA16 /* ContentView.swift in Sources */,
+				030B4FF82CC73BDF0018AA16 /* SiriSTT.swift in Sources */,
+				03ADBF462CC8DA79000720E7 /* Log.swift in Sources */,
+				030B4FE92CC737470018AA16 /* YYAppIntelligenceApp.swift in Sources */,
+				03ADBF422CC89330000720E7 /* YYTimer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		030B4FF22CC7374A0018AA16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		030B4FF32CC7374A0018AA16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		030B4FF52CC7374A0018AA16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83088DB54BA407D7F9E42BB8 /* Pods-YYAppIntelligence.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = YYAppIntelligence/YYAppIntelligence.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YYAppIntelligence/Preview Content\"";
+				DEVELOPMENT_TEAM = U3N22Y2GA8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to microphone";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xs.YYAppIntelligence;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		030B4FF62CC7374A0018AA16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4D17B6FF2ABFCA047E64F7 /* Pods-YYAppIntelligence.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = YYAppIntelligence/YYAppIntelligence.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YYAppIntelligence/Preview Content\"";
+				DEVELOPMENT_TEAM = U3N22Y2GA8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to microphone";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xs.YYAppIntelligence;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		030B4FE02CC737470018AA16 /* Build configuration list for PBXProject "YYAppIntelligence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030B4FF22CC7374A0018AA16 /* Debug */,
+				030B4FF32CC7374A0018AA16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		030B4FF42CC7374A0018AA16 /* Build configuration list for PBXNativeTarget "YYAppIntelligence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030B4FF52CC7374A0018AA16 /* Debug */,
+				030B4FF62CC7374A0018AA16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 030B4FDD2CC737470018AA16 /* Project object */;
+}
